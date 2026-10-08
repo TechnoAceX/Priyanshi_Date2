@@ -7,13 +7,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Cormorant+Garamond:wght@500;600;700&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
 <style>
-:root{--paper:#ecd8a6;--ink:#3b2a1d;--wine:#7b2a3c;--gold:#c9a24d;--navy:#0c1230;--silver:#dfe6f5;
+:root{--paper:#ecd8a6;--ink:#4a2a2e;--wine:#a8365a;--gold:#c9a24d;--navy:#0c1230;--silver:#dfe6f5;
 --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;--hand:'Caveat','Segoe Script','Bradley Hand','Brush Script MT',cursive;--title:'IM Fell English SC','Palatino Linotype',Georgia,serif}
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 html{scroll-behavior:smooth}
 body{font-family:var(--serif);color:var(--ink);font-size:1.2rem;line-height:1.55;min-height:100dvh;overflow-x:hidden;
-background:radial-gradient(ellipse at 50% 0%,#222f66 0%,#0c1230 55%,#070a1c 100%) fixed}
-body.happy{background:radial-gradient(ellipse at 50% 0%,#3b4a96 0%,#16204a 55%,#0b1030 100%) fixed}
+background:radial-gradient(ellipse at 50% 0%,#5a2a63 0%,#26123f 55%,#0f0820 100%) fixed}
+body.happy{background:radial-gradient(ellipse at 50% 0%,#8a3d7a 0%,#3a1a52 55%,#150a2c 100%) fixed}
 #stars{position:fixed;inset:0;pointer-events:none;z-index:0}
 .star{position:absolute;background:#fff;border-radius:50%;animation:tw 3s ease-in-out infinite}
 @keyframes tw{0%,100%{opacity:.15;transform:scale(.7)}50%{opacity:1;transform:scale(1.2)}}
@@ -22,8 +22,8 @@ main{position:relative;z-index:1;padding:0 14px 60px;max-width:620px;margin:0 au
 .paper{position:relative;margin:54px auto;padding:34px 22px;border:1px solid #b08d4f;
 border-radius:8px 16px 9px 14px/14px 8px 16px 9px;
 background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2'/><feColorMatrix values='0 0 0 0 .35 0 0 0 0 .22 0 0 0 0 .1 0 0 0 .25 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"),
-radial-gradient(circle at 18% 8%,#f6e8bf,transparent 60%),radial-gradient(circle at 90% 95%,#d6b673,transparent 55%),linear-gradient(#ecd8a6,#e0c58b);
-box-shadow:inset 0 0 46px rgba(120,80,30,.5),inset 0 0 5px rgba(90,50,20,.7),0 16px 34px rgba(0,0,0,.55);transition:box-shadow 2s}
+radial-gradient(circle at 18% 8%,#fbe9d0,transparent 60%),radial-gradient(circle at 90% 95%,#e8b9a0,transparent 55%),linear-gradient(#f3dfbd,#e8c9a0);
+box-shadow:inset 0 0 46px rgba(150,70,70,.4),inset 0 0 5px rgba(90,50,20,.7),0 16px 34px rgba(0,0,0,.55);transition:box-shadow 2s}
 .paper::before{content:"";position:absolute;inset:9px;border:1px solid rgba(123,42,60,.4);border-radius:5px;pointer-events:none}
 body.happy .paper{box-shadow:inset 0 0 46px rgba(120,80,30,.4),0 0 40px 6px rgba(255,220,130,.55),0 16px 34px rgba(0,0,0,.5)}
 .flour{text-align:center;color:var(--wine);letter-spacing:.5em;opacity:.7;font-size:1rem;margin:8px 0}
@@ -43,8 +43,8 @@ h1,h2{font-family:var(--title);font-weight:400;text-align:center;color:var(--win
 .cat.lg{width:130px;height:142px}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
 .center{text-align:center}
-.moon{cursor:pointer;display:block;margin:0 auto;filter:drop-shadow(0 0 22px rgba(223,230,245,.7));animation:glow 5s ease-in-out infinite;transition:filter 2s}
-@keyframes glow{50%{filter:drop-shadow(0 0 38px rgba(223,230,245,.95))}}
+.moon{cursor:pointer;display:block;margin:0 auto;filter:drop-shadow(0 0 22px rgba(255,214,230,.7));animation:glow 5s ease-in-out infinite;transition:filter 2s}
+@keyframes glow{50%{filter:drop-shadow(0 0 38px rgba(255,214,230,.95))}}
 body.happy .moon{filter:drop-shadow(0 0 50px #fff6c8) brightness(1.2)}
 .scene{text-align:center;padding-top:34px;position:relative}
 .scene .moon{width:150px;height:150px}
@@ -54,10 +54,10 @@ body.happy .moon{filter:drop-shadow(0 0 50px #fff6c8) brightness(1.2)}
 #cover .tag{font-family:var(--hand);font-size:1.5rem;color:#6a4a3a;margin-top:6px}
 .seal{display:block;width:100%;max-width:340px;margin:22px auto 4px;padding:17px 20px;border:0;border-radius:40px 34px 42px 32px;
 font-family:var(--title);font-size:1.2rem;letter-spacing:.05em;color:#f8e7c4;cursor:pointer;
-background:radial-gradient(circle at 30% 25%,#b03d55,#7b2a3c 55%,#4d1624);box-shadow:0 5px 0 #3a0f1b,0 10px 18px rgba(0,0,0,.45),inset 0 0 10px rgba(255,200,200,.25);transition:transform .15s,box-shadow .15s}
-.seal:active{transform:translateY(4px);box-shadow:0 1px 0 #3a0f1b,0 4px 8px rgba(0,0,0,.4)}
+background:radial-gradient(circle at 30% 25%,#e0567a,#a8365a 55%,#6b1b38);box-shadow:0 5px 0 #4d1229,0 10px 18px rgba(0,0,0,.45),inset 0 0 10px rgba(255,200,200,.25);transition:transform .15s,box-shadow .15s}
+.seal:active{transform:translateY(4px);box-shadow:0 1px 0 #4d1229,0 4px 8px rgba(0,0,0,.4)}
 .seal:disabled{opacity:.7}
-.seal.alt{background:radial-gradient(circle at 30% 25%,#2d3a78,#1b2354 55%,#0c1230);box-shadow:0 5px 0 #070a1c,0 10px 18px rgba(0,0,0,.45)}
+.seal.alt{background:radial-gradient(circle at 30% 25%,#8a4f9e,#5a2a74 55%,#2e1245);box-shadow:0 5px 0 #1a0a2a,0 10px 18px rgba(0,0,0,.45)}
 .chap{text-align:center;margin:20px 0}
 .chap .r{font-family:var(--title);letter-spacing:.35em;color:var(--wine);font-size:1rem}
 .chap .t{font-family:var(--title);font-size:3.4rem;color:var(--ink);line-height:1.1;text-shadow:2px 2px 0 rgba(201,162,77,.5)}
@@ -73,7 +73,7 @@ background:radial-gradient(circle at 30% 25%,#b03d55,#7b2a3c 55%,#4d1624);box-sh
 .cookie{cursor:pointer;display:inline-block;font-size:1.7rem;animation:bob 2.5s infinite}
 #player .disc{width:150px;height:150px;border-radius:50%;margin:10px auto 6px;position:relative;
 background:repeating-radial-gradient(circle,#1a1410 0 3px,#2a211a 4px 5px);box-shadow:0 8px 18px rgba(0,0,0,.6),inset 0 0 12px #000}
-#player .disc::after{content:"🌙";position:absolute;inset:50px;border-radius:50%;background:radial-gradient(#b03d55,#6a2234);display:grid;place-items:center;font-size:1.3rem}
+#player .disc::after{content:"🌙";position:absolute;inset:50px;border-radius:50%;background:radial-gradient(#e0567a,#8a2a48);display:grid;place-items:center;font-size:1.3rem}
 #player.spin .disc{animation:rot 4s linear infinite}
 @keyframes rot{to{transform:rotate(360deg)}}
 .ctrl{display:flex;gap:10px;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px}
@@ -104,6 +104,10 @@ input[type=range]{accent-color:var(--wine);width:130px}
 #toast.on{opacity:1;transform:translate(-50%,0)}
 .down{display:block;text-align:center;font-size:1.6rem;color:var(--wine);animation:bob 1.6s infinite}
 #story{display:none}
+.paper::after{content:"🌹";position:absolute;top:-15px;left:-8px;font-size:1.7rem;transform:rotate(-20deg);filter:drop-shadow(0 2px 2px rgba(0,0,0,.3))}
+.petal{position:fixed;top:-24px;z-index:2;pointer-events:none;width:12px;height:16px;background:radial-gradient(circle at 30% 30%,#ffc2d1,#e0567a);border-radius:80% 0 80% 0;opacity:.85;animation:petal linear forwards}
+.petal.hp{background:none;color:#ff9db8;width:auto;height:auto;font-size:15px;border-radius:0}
+@keyframes petal{from{transform:translate(0,0) rotate(0)}to{transform:translate(var(--dx),108vh) rotate(540deg)}}
 @media(min-width:700px){body{font-size:1.3rem}.paper{padding:44px 40px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01s!important}}
 </style>
@@ -112,22 +116,45 @@ input[type=range]{accent-color:var(--wine);width:130px}
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <defs>
 <symbol id="cat" viewBox="0 0 100 110">
-<path d="M74 100c24 3 30-24 14-38" fill="none" stroke="#17162a" stroke-width="9" stroke-linecap="round"/>
-<ellipse cx="50" cy="84" rx="27" ry="24" fill="#17162a"/>
-<polygon points="26,34 28,6 47,22" fill="#17162a"/><polygon points="74,34 72,6 53,22" fill="#17162a"/>
-<polygon points="30,28 31,14 40,22" fill="#8a4a62"/><polygon points="70,28 69,14 60,22" fill="#8a4a62"/>
-<circle cx="50" cy="44" r="27" fill="#17162a"/>
-<ellipse cx="39" cy="42" rx="6" ry="7" fill="#f3d46b"/><ellipse cx="61" cy="42" rx="6" ry="7" fill="#f3d46b"/>
-<ellipse cx="39" cy="43" rx="2.2" ry="5" fill="#111"/><ellipse cx="61" cy="43" rx="2.2" ry="5" fill="#111"/>
-<circle cx="37.5" cy="39.5" r="1.5" fill="#fff"/><circle cx="59.5" cy="39.5" r="1.5" fill="#fff"/>
-<polygon points="46.5,52 53.5,52 50,56" fill="#e39ab0"/>
-<path d="M50 56q-4 5-8 2M50 56q4 5 8 2" fill="none" stroke="#c8c8e0" stroke-width="1.2" stroke-linecap="round"/>
-<circle cx="31" cy="53" r="4" fill="#e39ab0" opacity=".35"/><circle cx="69" cy="53" r="4" fill="#e39ab0" opacity=".35"/>
-<path d="M24 50l-14-3M24 55l-14 3M76 50l14-3M76 55l14 3" stroke="#c8c8e0" stroke-width="1" opacity=".7"/>
-<ellipse cx="39" cy="106" rx="10" ry="5" fill="#241f3e"/><ellipse cx="61" cy="106" rx="10" ry="5" fill="#241f3e"/>
+<path d="M74 100c24 3 30-24 14-38" fill="none" stroke="#d9b08f" stroke-width="11" stroke-linecap="round"/>
+<path d="M74 100c24 3 30-24 14-38" fill="none" stroke="#fff1de" stroke-width="8.5" stroke-linecap="round"/>
+<ellipse cx="50" cy="84" rx="27" ry="24" fill="#fff1de" stroke="#d9b08f" stroke-width="1.4"/>
+<ellipse cx="50" cy="92" rx="14" ry="13" fill="#fff" opacity=".6"/>
+<polygon points="26,34 28,6 47,22" fill="#fff1de" stroke="#d9b08f" stroke-width="1.4"/><polygon points="74,34 72,6 53,22" fill="#fff1de" stroke="#d9b08f" stroke-width="1.4"/>
+<polygon points="30,28 31,14 40,22" fill="#f6a5b8"/><polygon points="70,28 69,14 60,22" fill="#f6a5b8"/>
+<circle cx="50" cy="44" r="27" fill="#fff1de" stroke="#d9b08f" stroke-width="1.4"/>
+<path d="M50 19v8M43 21l2 7M57 21l-2 7" stroke="#e6c9a8" stroke-width="2.5" stroke-linecap="round"/>
+<ellipse cx="39" cy="44" rx="6.5" ry="7.5" fill="#3a2230"/><ellipse cx="61" cy="44" rx="6.5" ry="7.5" fill="#3a2230"/>
+<circle cx="37" cy="41" r="2.7" fill="#fff"/><circle cx="41.5" cy="47" r="1.3" fill="#fff"/><circle cx="59" cy="41" r="2.7" fill="#fff"/><circle cx="63.5" cy="47" r="1.3" fill="#fff"/>
+<ellipse cx="28" cy="55" rx="6" ry="4" fill="#ff8fab" opacity=".6"/><ellipse cx="72" cy="55" rx="6" ry="4" fill="#ff8fab" opacity=".6"/>
+<polygon points="46.5,53 53.5,53 50,57" fill="#f58fa8"/>
+<path d="M50 57q-4 5-8 2M50 57q4 5 8 2" fill="none" stroke="#b86a7e" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M22 52l-12-3M22 57l-12 3M78 52l12-3M78 57l12 3" stroke="#d9c3b0" stroke-width="1"/>
+<path d="M33 66q17 11 34 0" fill="none" stroke="#e0456b" stroke-width="4" stroke-linecap="round"/>
+<path d="M50 83c-9-6-9-13-3-13 2 0 3 2 3 2s1-2 3-2c6 0 6 7-3 13z" fill="#e0456b"/>
+<ellipse cx="39" cy="106" rx="10" ry="5" fill="#fff" stroke="#d9b08f" stroke-width="1.4"/><ellipse cx="61" cy="106" rx="10" ry="5" fill="#fff" stroke="#d9b08f" stroke-width="1.4"/>
+</symbol>
+<symbol id="cat2" viewBox="0 0 100 110">
+<path d="M74 100c24 3 30-24 14-38" fill="none" stroke="#d9b08f" stroke-width="11" stroke-linecap="round"/>
+<path d="M74 100c24 3 30-24 14-38" fill="none" stroke="#f7b27a" stroke-width="8.5" stroke-linecap="round"/>
+<ellipse cx="50" cy="84" rx="27" ry="24" fill="#f7b27a" stroke="#d9b08f" stroke-width="1.4"/>
+<ellipse cx="50" cy="92" rx="14" ry="13" fill="#fff" opacity=".6"/>
+<polygon points="26,34 28,6 47,22" fill="#f7b27a" stroke="#d9b08f" stroke-width="1.4"/><polygon points="74,34 72,6 53,22" fill="#f7b27a" stroke="#d9b08f" stroke-width="1.4"/>
+<polygon points="30,28 31,14 40,22" fill="#f6a5b8"/><polygon points="70,28 69,14 60,22" fill="#f6a5b8"/>
+<circle cx="50" cy="44" r="27" fill="#f7b27a" stroke="#d9b08f" stroke-width="1.4"/>
+<path d="M50 19v8M43 21l2 7M57 21l-2 7" stroke="#d9803e" stroke-width="2.5" stroke-linecap="round"/>
+<ellipse cx="39" cy="44" rx="6.5" ry="7.5" fill="#3a2230"/><ellipse cx="61" cy="44" rx="6.5" ry="7.5" fill="#3a2230"/>
+<circle cx="37" cy="41" r="2.7" fill="#fff"/><circle cx="41.5" cy="47" r="1.3" fill="#fff"/><circle cx="59" cy="41" r="2.7" fill="#fff"/><circle cx="63.5" cy="47" r="1.3" fill="#fff"/>
+<ellipse cx="28" cy="55" rx="6" ry="4" fill="#ff8fab" opacity=".6"/><ellipse cx="72" cy="55" rx="6" ry="4" fill="#ff8fab" opacity=".6"/>
+<polygon points="46.5,53 53.5,53 50,57" fill="#f58fa8"/>
+<path d="M50 57q-4 5-8 2M50 57q4 5 8 2" fill="none" stroke="#b86a7e" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M22 52l-12-3M22 57l-12 3M78 52l12-3M78 57l12 3" stroke="#d9c3b0" stroke-width="1"/>
+<path d="M33 66q17 11 34 0" fill="none" stroke="#e0456b" stroke-width="4" stroke-linecap="round"/>
+<path d="M50 83c-9-6-9-13-3-13 2 0 3 2 3 2s1-2 3-2c6 0 6 7-3 13z" fill="#e0456b"/>
+<ellipse cx="39" cy="106" rx="10" ry="5" fill="#fff" stroke="#d9b08f" stroke-width="1.4"/><ellipse cx="61" cy="106" rx="10" ry="5" fill="#fff" stroke="#d9b08f" stroke-width="1.4"/>
 </symbol>
 <symbol id="moon" viewBox="0 0 100 100">
-<defs><radialGradient id="mg" cx=".35" cy=".35"><stop offset="0" stop-color="#fffbe8"/><stop offset="1" stop-color="#d9def0"/></radialGradient>
+<defs><radialGradient id="mg" cx=".35" cy=".35"><stop offset="0" stop-color="#fffbe8"/><stop offset="1" stop-color="#ffdce8"/></radialGradient>
 <mask id="mm"><rect width="100" height="100" fill="#fff"/><circle cx="66" cy="38" r="33" fill="#000"/></mask></defs>
 <circle cx="44" cy="52" r="38" fill="url(#mg)" mask="url(#mm)"/>
 </symbol>
@@ -146,6 +173,7 @@ input[type=range]{accent-color:var(--wine);width:130px}
   <p class="flour">❦ ✦ ❦</p>
   <h1 class="hand big" style="font-family:var(--hand);letter-spacing:0">Dear Priyanshi...</h1>
   <p class="tag">Before anything else...</p>
+  <p class="tag" style="font-size:1.2rem">(a little letter, just for you 🌹)</p>
   <button class="seal" id="openBtn">Open the letter 🌙</button>
   <p class="flour">· · ·</p>
 </section>
@@ -174,7 +202,7 @@ input[type=range]{accent-color:var(--wine);width:130px}
   <p class="ln">The only way I know how is by talking.</p>
   <p class="ln">Talking more. Understanding each other. Sharing everything.</p>
   <p class="ln">And just spending time together.</p>
-  <div class="center ln"><div class="cat"><svg><use href="#cat"/></svg><span class="acc">🌙</span></div> <div class="cat flip"><svg><use href="#cat"/></svg><span class="acc">⭐</span></div></div>
+  <div class="center ln"><div class="cat"><svg><use href="#cat"/></svg><span class="acc">🌙</span></div> <div class="cat flip"><svg><use href="#cat2"/></svg><span class="acc">⭐</span></div></div>
 </section>
 
 <section class="paper page" id="p3">
@@ -184,12 +212,12 @@ input[type=range]{accent-color:var(--wine);width:130px}
   <p class="ln">I would like to invite you to</p>
   <div class="chap ln"><div class="bar"></div><div class="r">CHAPTER II</div><div class="t">DATE 2</div><div class="bar"></div><div class="emo">🌙❤️</div></div>
   <div class="center ln"><div class="cat lg"><svg><use href="#cat"/></svg><span class="acc">📜</span></div></div>
-  <button class="seal alt" id="enterBtn">Enter Date 2 🐈‍⬛</button>
+  <button class="seal alt" id="enterBtn">Enter Date 2 🐱</button>
 </section>
 
 <section id="plan">
   <h2 class="hand big" style="font-family:var(--hand);color:#f3e6b0;margin-top:30px">The Plan 📜</h2>
-  <p class="center" style="color:#cfd6ee;font-size:1rem">six chapters, one very full day</p>
+  <p class="center" style="color:#f0d3e6;font-size:1rem">six chapters, one very full day</p>
 
   <article class="paper card"><div class="tx"><div class="no">CHAPTER I</div><h2>🎬 WTP</h2>
     <p class="ln">First stop: WTP.</p><p class="ln">We'll watch <b>Verity</b>. Sit back, relax, enjoy the movie, and hopefully not judge my movie reactions too much. 😂</p></div>
@@ -198,7 +226,7 @@ input[type=range]{accent-color:var(--wine);width:130px}
   <article class="paper card rev"><div class="tx"><div class="no">CHAPTER II</div><h2>🍜 Food</h2>
     <p class="ln">After the movie...</p><p class="ln hand">WE EAT.</p><p class="ln">Because apparently romance requires food.</p>
     <p class="ln emo">🍜 🍟 <span class="cookie">🍪</span> ❤️</p></div>
-    <div class="cat flip"><svg><use href="#cat"/></svg><span class="acc">🍜</span></div></article>
+    <div class="cat flip"><svg><use href="#cat2"/></svg><span class="acc">🍜</span></div></article>
 
   <article class="paper card"><div class="tx"><div class="no">CHAPTER III</div><h2>🕵️ Drishyam 2</h2>
     <p class="ln">Then comes the second movie...</p><p class="ln"><b>Drishyam 2: The Conclusion.</b></p>
@@ -207,7 +235,7 @@ input[type=range]{accent-color:var(--wine);width:130px}
 
   <article class="paper card rev"><div class="tx"><div class="no">CHAPTER IV</div><h2>🛍️ 99 Store</h2>
     <p class="ln">Then we'll go buy some random things from the 99 Store.</p><p class="ln">We probably don't need them.</p><p class="ln">But we're buying them anyway.</p></div>
-    <div class="cat flip"><svg><use href="#cat"/></svg><span class="acc">🛍️</span></div></article>
+    <div class="cat flip"><svg><use href="#cat2"/></svg><span class="acc">🛍️</span></div></article>
 
   <article class="paper card"><div class="tx"><div class="no">CHAPTER V</div><h2>🍟 McDonald's</h2>
     <p class="ln">Obviously...</p><p class="ln hand">McDonald's.</p><p class="ln">Because apparently every date eventually ends here. 😂</p></div>
@@ -215,7 +243,7 @@ input[type=range]{accent-color:var(--wine);width:130px}
 
   <article class="paper card rev"><div class="tx"><div class="no">CHAPTER VI</div><h2>🌙 Home</h2>
     <p class="ln">Then...</p><p class="ln">We go back home.</p><p class="ln">Hopefully tired, happy, and with another bunch of memories.</p></div>
-    <div class="cat flip"><svg><use href="#cat"/></svg><span class="acc">💤</span></div></article>
+    <div class="cat flip"><svg><use href="#cat2"/></svg><span class="acc">💤</span></div></article>
 </section>
 
 <section class="paper page" id="player">
@@ -242,6 +270,7 @@ input[type=range]{accent-color:var(--wine);width:130px}
   <p class="ln">And I want us to talk. Really talk.</p>
   <p class="ln">Because I don't want there to be a gap between us.</p>
   <p class="ln hand big">So let's close it. ❤️</p>
+  <p class="ln hand" style="text-align:right;margin-right:8px">Yours, always,<br>Pawan 🌹</p>
 </section>
 
 <section class="paper page" id="ticket">
@@ -249,12 +278,12 @@ input[type=range]{accent-color:var(--wine);width:130px}
   <h1 style="font-size:2rem">🌙 DATE II 🌙</h1>
   <p class="hand big" style="margin-top:6px">Priyanshi</p>
   <p class="dt">YOU ARE INVITED TO A DAY TOGETHER</p>
-  <ul><li>🎬 Movies</li><li>🍜 Food</li><li>🛍️ Shopping</li><li>🍟 McDonald's</li><li>🐈‍⬛ Memories</li><li>❤️ Us</li></ul>
+  <ul><li>🎬 Movies</li><li>🍜 Food</li><li>🛍️ Shopping</li><li>🍟 McDonald's</li><li>🐱 Memories</li><li>❤️ Us</li></ul>
   <p class="dt">DATE<b id="dV"></b></p><p class="dt" style="margin-top:8px">TIME<b id="tV"></b></p>
   <p class="flour">━━━ ✦ ━━━</p>
   <p class="hand big" style="margin:12px 0 0;text-align:center">Will you come with me? 🌙❤️</p>
   <button class="seal yes">YES 🥺❤️</button>
-  <button class="seal alt yes">Obviously 🐈‍⬛</button>
+  <button class="seal alt yes">Obviously 🐱</button>
 </section>
 
 <section class="paper" id="done">
@@ -262,8 +291,9 @@ input[type=range]{accent-color:var(--wine);width:130px}
   <h1>DATE 2 CONFIRMED 🌙❤️</h1>
   <p class="hand big">Let's close that little gap.</p>
   <p style="margin:.6em 0">One conversation at a time.</p>
-  <div class="cats3"><div class="cat"><svg><use href="#cat"/></svg><span class="acc">❤️</span></div><div class="cat lg flip"><svg><use href="#cat"/></svg><span class="acc">🍪</span></div><div class="cat"><svg><use href="#cat"/></svg><span class="acc">⭐</span></div></div>
+  <div class="cats3"><div class="cat"><svg><use href="#cat"/></svg><span class="acc">❤️</span></div><div class="cat lg flip"><svg><use href="#cat2"/></svg><span class="acc">🍪</span></div><div class="cat"><svg><use href="#cat"/></svg><span class="acc">⭐</span></div></div>
   <p class="hand big" style="margin-top:14px">I love you, Priyanshi. ❤️</p>
+  <p class="hand">— Pawan 🌹</p>
 </section>
 </div>
 </main>
@@ -276,9 +306,9 @@ input[type=range]{accent-color:var(--wine);width:130px}
 const DATE = "10 October 2026";
 const TIME = "8:00 AM – 8:00 PM";
 
-const SONG_URL = "date2-song.mp3";
+const SONG_URL = "assets/date2-song.mp3";
 
-const MEMORY_PHOTO = "date2-memory.jpeg";
+const MEMORY_PHOTO = "assets/date2-memory.jpg";
 
 /* ================================ */
 
@@ -293,6 +323,13 @@ for (let i = 0; i < 70; i++) {
   sky.appendChild(s);
 }
 
+function petal(){
+  const e=document.createElement('div'),d=7+Math.random()*6;
+  e.className='petal'+(Math.random()<.25?' hp':''); if(e.className.includes('hp'))e.textContent='♥';
+  e.style.cssText=`left:${Math.random()*100}%;--dx:${(Math.random()-.5)*160}px;animation-duration:${d}s`;
+  document.body.appendChild(e); setTimeout(()=>e.remove(),d*1000);
+}
+setInterval(petal,1300);
 let tt;
 function toast(m) { const t = $('#toast'); t.textContent = m; t.classList.add('on'); clearTimeout(tt); tt = setTimeout(() => t.classList.remove('on'), 2200); }
 
@@ -301,7 +338,7 @@ let si = 0;
 document.addEventListener('click', e => {
   const t = e.target.closest('.moon,.cat,.cookie,.cstar'); if (!t) return;
   if (t.classList.contains('moon')) toast("Someone's watching us. 🌙👀");
-  else if (t.classList.contains('cat')) toast("Meow. I approve this date. 🐈‍⬛");
+  else if (t.classList.contains('cat')) toast("Meow. I approve this date. 🐱");
   else if (t.classList.contains('cookie')) toast("Emergency cookie break. 🍪");
   else toast(starMsgs[si++ % starMsgs.length]);
 });
@@ -339,7 +376,7 @@ function fx(cls, txt, css, ms) {
   document.body.appendChild(d); setTimeout(() => d.remove(), ms);
 }
 function celebrate() {
-  const cols = ['#c9a24d', '#e8d38a', '#b03d55', '#dfe6f5', '#7b2a3c'];
+  const cols = ['#c9a24d', '#ff8fab', '#e0567a', '#ffd6e0', '#a8365a'];
   for (let i = 0; i < 70; i++) fx('conf', '', `left:${Math.random()*100}%;top:0;background:${cols[i%5]};animation-delay:${Math.random()*1.5}s;animation-duration:${2.5+Math.random()*2}s`, 6000);
   for (let i = 0; i < 26; i++) fx('heart', ['❤️', '💗', '🌙', '✨'][i % 4], `left:${Math.random()*95}%;bottom:-30px;font-size:${18+Math.random()*22}px;animation-delay:${Math.random()*3}s`, 8000);
 }
